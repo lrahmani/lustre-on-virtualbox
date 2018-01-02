@@ -33,7 +33,7 @@ servers and compute nodes as Lustre client
 
 #### Here is how the virtual cluster will look like by the end of this tutorial
 
-![virtual-cluster-arch](virtual-cluster-arch.png)
+![virtual-cluster-arch](https://github.com/lrahmani/lustre-on-virtualbox/blob/master/cluster-provision-vbox/virtual-cluster-arch.png)
 
 ## Requirements
 
