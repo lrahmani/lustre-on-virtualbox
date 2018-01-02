@@ -1,0 +1,13 @@
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/kernel-3.10.0-693.5.2.el7_lustre.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/lustre-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/lustre-iokit-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/lustre-osd-ldiskfs-mount-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/lustre-tests-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/kmod-lustre-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/kmod-lustre-osd-ldiskfs-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/lustre/latest-release/el7/server/RPMS/x86_64/kmod-lustre-tests-2.10.2-1.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/e2fsprogs/latest/el7/RPMS/x86_64/e2fsprogs-1.42.13.wc6-7.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/e2fsprogs/latest/el7/RPMS/x86_64/e2fsprogs-libs-1.42.13.wc6-7.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/e2fsprogs/latest/el7/RPMS/x86_64/libcom_err-1.42.13.wc6-7.el7.x86_64.rpm
+https://downloads.hpdd.intel.com/public/e2fsprogs/latest/el7/RPMS/x86_64/libss-1.42.13.wc6-7.el7.x86_64.rpm
+
