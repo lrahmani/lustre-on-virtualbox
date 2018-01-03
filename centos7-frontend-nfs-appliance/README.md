@@ -50,5 +50,14 @@
 - Configure adminNode as as an internet gateway for `adminNET` network (on `enp0s3`)
   1. Configure `firewalld` (replacing `iptables`) 
   ```bash
+  # run the firewall
+  systemctl enable firewalld
+  systemctl start firewalld
+  # allow nfs ports
+  firewall-cmd --permanent --add-service=nfs
+  # configure NAT service
+  firewall-cmd --permanent --direct --add-rule ipv4 nat POSTROUTING 0 -o enp0s9 -j MASQUERADE
+  firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 0 -i enp0s3 -o enp0s9 -j ACCEPT
+  firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 0 -i enp0s9 -o enps03 -m state --state RELATED,ESTABLISHED -j ACCEPT
   
   ```
