@@ -54,7 +54,7 @@ connected to the internet
 
 1. [Provision the virtual cluster using `VBoxManage`](https://github.com/lrahmani/lustre-on-virtualbox/wiki/provision-cluster-vbox)
 2. [Prepare base-os virtual disk image and add it to nodes within the compute section of the cluster (i.e., `adminNode` and `computeNode`s)](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-machines-basic)
-3. Configure `adminNode` for NFS and DHCP servers and internet access
+3. [Configure `adminNode` for NFS and DHCP servers and internet access](https://github.com/lrahmani/lustre-on-virtualbox/tree/master/centos7-frontend-nfs-appliance)
 4. [Configure `computeNode`s network](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-client)
 5. [Prepare Lustre kernel-modified OS virtual disk images for its servers](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-Servers-(OSS,MGS,MDS))
 6. [Configure and deploy Lustre Manager Server (MGS) and Metadata Server (MDS)](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-mgs-mds)
