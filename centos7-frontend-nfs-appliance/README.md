@@ -6,7 +6,7 @@ dhclient enp0s9 -v
 ```
 4. Install needed and recommended/useful packages
 ```bash
-yum -y install wget net-tools telnet 
+yum -y install net-tools telnet 
 ```
 5. Install NFS packages
 ```bash
@@ -33,11 +33,16 @@ mount /dev/sdb1 /mnt/shared/
 ```bash
 echo "/mnt/shared/ 192.168.56.0/255.255.255.0(rw,sync,no_root_squash,no_subtree_check)" > /etc/exports
 ```
+8. Configure network, assign IP address to the NFS server on the `adminNET`
+```bash
+ifconfig enp0s3 192.168.56.200 netmask 255.255.255.0 broadcast 192.168.56.255
+```
 8. Start NFS
 ```bash
 systemctl enable rpcbind nfs nfs-server nfs-lock nfs-idmap
 systemctl start rpcbind nfs nfs-server nfs-lock nfs-idmap
 ```
-9. Configure `adminNET` netowrk
+9. Configure adminNode as an internet gateway for`adminNET` netowrk (on `enp0s3`)
 ```bash
+
 ```
