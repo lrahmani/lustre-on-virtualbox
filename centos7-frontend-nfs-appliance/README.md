@@ -47,6 +47,16 @@
   systemctl enable rpcbind nfs nfs-server nfs-lock nfs-idmap
   systemctl start rpcbind nfs nfs-server nfs-lock nfs-idmap
   ```
+  6. NFS client side configuration
+  ```bash
+  # Install nfs packages
+  yum -y install nfs-utils nfs-utils-libs
+  # Mount 
+  mkdir /mnt/nfs/
+  mount -t nfs 192.168.56.200:/mnt/shared/ /mnt/nfs
+  # Permanent mount
+  echo "192.168.56.200:/mnt/shared  /mnt/nfs  nfs rw,hard,intr 0 0" >> /etc/fstab
+  ```
 - Configure adminNode as as an internet gateway for `adminNET` network (on `enp0s3`)
   1. Configure `firewalld` (replacing `iptables`) 
   ```bash
@@ -60,4 +70,15 @@
   firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 0 -i enp0s3 -o enp0s9 -j ACCEPT
   firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 0 -i enp0s9 -o enps03 -m state --state RELATED,ESTABLISHED -j ACCEPT
   
+  ```
+  
+- Set up a dhcp server
+  
+  /!\ INROGRESS /!\
+  
+  ```bash
+  # I'll be using dnsmasq
+  yum -y install dnsmasq
+  cat /etc/dnsmasq.conf
+  # TODO
   ```
