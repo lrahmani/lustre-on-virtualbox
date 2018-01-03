@@ -71,6 +71,10 @@
   firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 0 -i enp0s9 -o enps03 -m state --state RELATED,ESTABLISHED -j ACCEPT
   
   ```
+  2. Client side configuration
+  ```bash
+  route add default gw 192.168.56,200 enp0s8
+  ```
   
 - Set up a dhcp server
   
