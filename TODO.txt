@@ -1,0 +1,15 @@
++ Update virtual cluster architecture figure:
+  - Add NFS.vdi disk to adminNode
+  - change enp0s4 to enp0s9
+  - Add IP addresses to all network ifs
+
++ Update provision cluster using VBoxManage
+  - add script
+  - add .md description
+
++ Update all md links to point to the repo rather 
+  than the wiki
+
++ Mark the wiki as deprecated
+
++ Add reference section by the end of each .md doc
