@@ -73,7 +73,7 @@
   ```
   2. Client side configuration
   ```bash
-  route add default gw 192.168.56,200 enp0s8
+  route add default gw 192.168.56.200 enp0s8
   ```
   
 - Set up a dhcp server
