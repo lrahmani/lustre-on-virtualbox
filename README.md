@@ -42,6 +42,7 @@ connected to the internet
 - Oracle's VirtualBox installed
 
 ## Quick steps
+- [Lustre in a nutshell](https://docs.google.com/presentation/d/1ivuUxfF8aVkSPqAYfkqZLIN88KkvF8Oy-KGfNqm6YAk/edit?usp=sharing)
 - [Create a CentOS 7 minimal appliance, that will be the base of each VM installation](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-machines-basic)
 - [Install and configure Lustre servers](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-Servers-(OSS,MGS,MDS))
   - [MGS/MDS](https://github.com/lrahmani/lustre-on-virtualbox/wiki/configure-mgs-mds)
